@@ -1,16 +1,16 @@
- # ME 701 -- HW 3
+# ME 701 - HW 3
 
 Instructions:  Your solutions to the following should be contained in
-one file named {\tt lastname\_firstname\_hw3.py} and uploaded to Canvas.
+one file named `lastname_firstname_hw3.py`.
 
 
-## Problem 1 -- Some Python `str` Basics
+## Problem 1 -- Some Python String Basics
 
 
 1. Let `a = "hello"` and `b = "world"`.  Use 
    `a` and `b` to produce `c = "hello world"`.
 2. Figure out how to define `d = 'Hello World'` starting with `c`.
-3. From `d`, define \texttt{e = ``Hello''} and  \texttt{f = ``World''}
+3. From `d`, define `e = ``Hello''` and `f = ``World''`
    in a single line of code.
 4. Let  `g = 123; h = 3.141592653589793; i = 6.022e23`.  Using those 
    values, produce `j = '123|3.1416| 6.02e+23'` in just one line.
@@ -69,7 +69,7 @@ comprehension:
 ```
 
  
-## Problem 4 -- Binary Fun}
+## Problem 4 -- Binary Fun
 
 In class, we covered some basics of floating-point numbers, showing,
 for example, that $0.1$ (in base-10) can only be represented 
