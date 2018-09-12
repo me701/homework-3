@@ -68,4 +68,72 @@ comprehension:
 	            points.append((x, y, z))
 ```
 
+ 
+## Problem 4 -- Binary Fun}
+
+In class, we covered some basics of floating-point numbers, showing,
+for example, that $0.1$ (in base-10) can only be represented 
+in the base-2 (binary) system using an infinite number of bits.
+In other words, $0.1$ cannot be represented on our computers.  Your 
+job is to write a function that computes the closest binary
+representation of a given base-10 number using a fixed number of 
+bits for the fractional part (i.e., the stuff to the right of 
+the floating point).  In essence, you are extending 
+the built-in `bin` function. 
+
+**Deliverables**:
+
+ 1.    Implement a function named `decimal_to_binary(x, n)` 
+       that accepts a floating-point number $n$ and an integer 
+       $n$, and returns the binary representation of that 
+       number using at most $n$ bits to the right of the 
+       floating point.  For simplicity, return the 
+       result as a string.  Example: for $x = 123.625_{10}$ and $n = 4$, you 
+       should return `'1111011.1010'`. 
+ 2.    Implement a second function `binary_to_decimal(i, f)` that 
+       takes a binary number of the form  `'1111011.1010'` and returns
+       it in base-10 as a standard float.
+
+
+## Problem 5 -- Conservation of Numbers?
+
+Summing up the elements of an array is easy:
+
+```
+# option 1
+s = 0
+for i in range(len(a)):
+   s += a[i]
+```
+
+However, one could also do this:
+
+```
+# option 2
+s = 0
+a = sorted(a)
+for i in range(len(a)):
+   s += a[i]
+```
+
+Or even this:
+
+```
+# option 3
+def sumr(a):
+    if len(a) <= 2:
+        return sum(a)
+    else:
+        return sumr(a[:len(a)//2]) + sumr(a[len(a)//2:])
+s = sumr(a)
+```
+
+By using `a = np.random.rand(n)` and the `Decimal` module, perform a 
+numerical experiment that shows (1) which of these approaches is 
+most accurate, (2) how these compare to the built-in `sum` and `np.sum` 
+functions, and (3) how the error in the sum varies with the number of 
+elements `n` of the array `a` being summed.
+
+I hope that this problem highlights a basic fact: even the 
+simplest of numerical computing tasks results in observable error!
 
