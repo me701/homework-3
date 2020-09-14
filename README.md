@@ -1,115 +1,64 @@
 # ME 701 - HW 3
 
-Instructions:  Your solutions to the following should be contained in
-four files.  Problems 1 and 2 should be in `problems_1_and_2.py`.
-Problem 3 and its tests should be in `problem_3.py` and `test_problem_3.py`,
-respectively.  Finally, the last one should go in `problem_4.py`.
+Instructions:  For this homework, you will modify this `README.md` file.
+Follow the individual problem instructions.
+
+## Problem 1 -- Going to War
+
+I came across [Code Wars](www.codewars.com) a few years back and thought it
+was pretty fun.  Basically, it turns coding into a game that, unsurprisingly,
+gets harder every time you "win."  
+
+You are to sign up at [Code Wars](www.codewars.com).  If it gives you the
+option, consider joining me ([robertsj](https://www.codewars.com/users/robertsj))
+and the K-State clan.  
+
+**Replace `robertsj` in [this link]([robertsj](https://www.codewars.com/users/robertsj) with your user name.**
+
+## Problem 2 -- Mastery of the Python
+
+When you first join Code Wars, you will start at the 8 kyu [beginner](https://www.codewars.com/docs)
+level.  The challenges will start of easy (relatively, speaking) and get
+harder.  I've done about 20 challenges and am at 5 kyu (a novice, haha).  For this
+problem, you are to complete *at least* 6 challenges, one of which you will
+select for Problem 3 (read that, too).  
+
+List the six challenges below by using the appropriate URL, adding more
+lines if you're the overachieving type:
+
+  1.  https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/python (example that you should delete)
+  2.
+  3.
+  4.
+  5.
+  6.
 
 
-## Problem 1 -- Some Python String Basics
+## Problem 3 -- Reflecting on Debugging, Testing, and More
 
+Choose one of the problems you listed above for the following tasks:
 
-1. Let `a = "hello"` and `b = "world"`.  Use 
-   `a` and `b` to produce `c = "hello world"`.
-2. Figure out how to define `d = 'Hello World'` starting with `c`.
-3. From `d`, define `e = ``Hello''` and `f = ``World''`
-   in a single line of code.
-4. Let  `g = 123; h = 3.141592653589793; i = 6.022e23`.  Using those 
-   values, produce `j = '123|3.1416| 6.02e+23'` in just one line.
-5. Let `k = 5` (or some other integer).  Use that to produce 
-   `l =  '0..1..2..3..4'` in just one line.
-
-## Problem 2 -- A Python Oddity
-
-Consider the following code and output
-```
->>> a = [1, 2, 3]
->>> b = a
->>> a[0] = 99
->>> a
-[99, 2, 3]
->>> b
-[99, 2, 3]
-```
-
-In other words, a change in `a` leads to
-a change in `b`.  This can confuse Python
-newbies.
-
-1. Explain, in your own words, why this happens.
-2. Offer **two** ways by which one could produce a second list `b` with the same 
-   `a`.  At least **one** of these should require no more than one 
-   expression.  For reference, an expression is just a composition of 
-   arithmetic or other operations, e.g., `sin(a**2)/4.0+1`.
-
- 
-## Problem 3 -- Binary Fun
-
-In class, we covered some basics of floating-point numbers, showing,
-for example, that $0.1$ (in base-10) can only be represented 
-in the base-2 (binary) system using an infinite number of bits.
-In other words, $0.1$ cannot be represented on our computers.  Your 
-job is to write a function that computes the closest binary
-representation of a given base-10 number using a fixed number of 
-bits for the fractional part (i.e., the stuff to the right of 
-the floating point).  In essence, you are extending 
-the built-in `bin` function. 
-
-**Deliverables**:
-
- 0.    Use `unittest` to produce test cases for the following items and use
-       to test your implementations along the way.
- 1.    Implement a function named `decimal_to_binary(x, n)` 
-       that accepts a floating-point number $n$ and an integer 
-       $n$, and returns the binary representation of that 
-       number using at most $n$ bits to the right of the 
-       floating point.  For simplicity, return the 
-       result as a string.  Example: for $x = 123.625_{10}$ and $n = 4$, you 
-       should return `'1111011.1010'`. 
- 2.    Implement a second function `binary_to_decimal(i, f)` that 
-       takes a binary number of the form  `'1111011.1010'` and returns
-       it in base-10 as a standard float.
-
-
-## Problem 4 -- Conservation of Numbers?
-
-Summing up the elements of an array is easy:
+  1. Before you begin on any code, read the instructions for the problem and
+     understand the "software requirements."  Are they good?  Are there gaps?
+     Explain.
+  2. Now, look at the starter code.  Is there any Python syntax that is not
+     familiar to you?
+  3. Look at the provided tests, which show (1) how the program (here, a single function) should be
+     used and (2) how it should behave for certain cases.  Do these cases look complete?  
+  4. Begin to code in the browser, or copy and paste into VS code (or your favorite editor).
+     Remember, you can use the same sort of tests by using `unittest`.
+  5. Develop your solution, test it, fix it, and repeat.  As you go along, describe what went wrong
+     and, as you fix the bugs, why it went wrong.  By learning about our patterns of coding, we are
+     better able to (1) prevent mistakes and/or (2) quickly recognize our mistakes.
 
 ```
-# option 1
-s = 0
-for i in range(len(a)):
-   s += a[i]
+PUT YOUR STORY here, including which problem you are describing.
 ```
 
-However, one could also do this:
 
-```
-# option 2
-s = 0
-a = sorted(a)
-for i in range(len(a)):
-   s += a[i]
-```
+## Problem 4 -- Complete the Anonymous Survey
 
-Or even this:
-
-```
-# option 3
-def sumr(a):
-    if len(a) <= 2:
-        return sum(a)
-    else:
-        return sumr(a[:len(a)//2]) + sumr(a[len(a)//2:])
-s = sumr(a)
-```
-
-By using `a = np.random.rand(n)` and the `Decimal` module, perform a 
-numerical experiment that shows (1) which of these approaches is 
-most accurate, (2) how these compare to the built-in `sum` and `np.sum` 
-functions, and (3) how the error in the sum varies with the number of 
-elements `n` of the array `a` being summed.
-
-I hope that this problem highlights a basic fact: even the 
-simplest of numerical computing tasks results in observable error!
-
+Times are strange, and I believe we're all trying our best.  That said, efforts can always be
+refocused, so I want to know how I can use my time better for you.  Or, if all is  
+[hunky dory](https://en.wikipedia.org/wiki/Hunky_Dory_(disambiguation)), cool;
+let me know that, too.
