@@ -13,7 +13,7 @@ You are to sign up at [Code Wars](www.codewars.com).  If it gives you the
 option, consider joining me ([robertsj](https://www.codewars.com/users/robertsj))
 and the K-State clan.  
 
-**Replace `robertsj` in [this link]([robertsj](https://www.codewars.com/users/robertsj) with your user name.**
+**Replace `robertsj` in [this link](https://www.codewars.com/users/robertsj) with your user name.**
 
 ## Problem 2 -- Mastery of the Python
 
@@ -55,10 +55,3 @@ Choose one of the problems you listed above for the following tasks:
 PUT YOUR STORY here, including which problem you are describing.
 ```
 
-
-## Problem 4 -- Complete the Anonymous Survey
-
-Times are strange, and I believe we're all trying our best.  That said, efforts can always be
-refocused, so I want to know how I can use my time better for you.  Or, if all is  
-[hunky dory](https://en.wikipedia.org/wiki/Hunky_Dory_(disambiguation)), cool;
-let me know that, too.
