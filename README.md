@@ -45,8 +45,9 @@ Choose one of the problems you listed above for the following tasks:
      familiar to you?
   3. Look at the provided tests, which show (1) how the program (here, a single function) should be
      used and (2) how it should behave for certain cases.  Do these cases look complete?  
-  4. Begin to code in the browser, or copy and paste into VS code (or your favorite editor).
-     Remember, you can use the same sort of tests by using `unittest`.
+  4. You may begin to code in the browser, but you will ultimately need to copy and paste
+     your solution into VS code (or your favorite editor).  
+     Remember, you can (and should) implement the same sort of tests by using `unittest`.
   5. Develop your solution, test it, fix it, and repeat.  As you go along, describe what went wrong
      and, as you fix the bugs, why it went wrong.  By learning about our patterns of coding, we are
      better able to (1) prevent mistakes and/or (2) quickly recognize our mistakes.
@@ -55,3 +56,14 @@ Choose one of the problems you listed above for the following tasks:
 PUT YOUR STORY here, including which problem you are describing.
 ```
 
+## Problem 4 -- The Final Result
+
+For the problem you selected, commit your solution as `mysolution.py`.  This file should have 
+the the problem statement in a module-level docstring (i.e., a `"""triple quote"""` string at 
+the top of the file.
+
+In addition, commit your unit tests as `testmysolution.py`.  
+
+Once I clone your repository, I should be able to enter the folder and 
+to execute `python testmysolution.py` without
+any issues.
